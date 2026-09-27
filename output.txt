@@ -1,0 +1,56 @@
+Token                Lexeme                    Line No
+------------------------------------------------------------
+Keyword              int                       3
+Identifier           main                      3
+Separator            (                         3
+Separator            )                         3
+Separator            {                         3
+Keyword              int                       4
+Identifier           x                         4
+Operator             =                         4
+Integer Constant     42                        4
+Separator            ;                         4
+Keyword              char                      5
+Identifier           c                         5
+Operator             =                         5
+Char Constant        a                         5
+Separator            ;                         5
+Keyword              char                      6
+Identifier           bad                       6
+Operator             =                         6
+Keyword              float                     7
+Identifier           y                         7
+Operator             =                         7
+Integer Constant     3                         7
+Separator            .                         7
+Integer Constant     14                        7
+Separator            ;                         7
+Keyword              char                      8
+Operator             *                         8
+Identifier           str                       8
+Operator             =                         8
+String Constant      Hello World               8
+Separator            ;                         8
+Keyword              char                      9
+Operator             *                         9
+Identifier           unterminated              9
+Operator             =                         9
+Keyword              int                       10
+Identifier           z                         10
+Operator             =                         10
+Integer Constant     10                        10
+Separator            ;                         10
+Operator             /                         11
+Operator             /                         11
+Identifier           line                      11
+Identifier           comment                   11
+Identifier           not                       11
+Identifier           supported                 11
+Identifier           in                        11
+Identifier           C89                       11
+Identifier           but                       11
+Identifier           let                       11
+Keyword              return                    12
+Integer Constant     0                         12
+Separator            ;                         12
+Separator            }                         13
