@@ -1,0 +1,6 @@
+Lexeme,Type,Scope,Array size
+main,Function,Global,
+x,Int,main,
+c,Char,main,
+bad,Char,main,
+z,Int,main,

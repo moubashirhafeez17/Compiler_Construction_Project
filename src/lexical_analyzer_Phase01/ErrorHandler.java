@@ -1,0 +1,38 @@
+package lexical_analyzer_Phase01;
+
+public class ErrorHandler {
+
+    public static void reportError(String errorType, String detail, int lineNumber) {
+        System.err.println("Error at line " + lineNumber + ": " + errorType + " -> " + detail);
+    }
+
+    public static void unterminatedComment(int lineNumber) {
+        reportError("Un-terminated comment",
+                "Comment started but never closed", lineNumber);
+    }
+
+    public static void stringExceedsLine(int lineNumber) {
+        reportError("String constant exceeds line",
+                "String literal not closed before end of line", lineNumber);
+    }
+
+    public static void charConstantTooLong(int lineNumber, String lexeme) {
+        reportError("Char constant too long",
+                "Invalid char constant: " + lexeme, lineNumber);
+    }
+
+    public static void emptyCharConstant(int lineNumber) {
+        reportError("Empty char constant",
+                "Char literal '' is not allowed", lineNumber);
+    }
+
+    public static void unterminatedChar(int lineNumber) {
+        reportError("Un-terminated char constant",
+                "Char literal not closed before end of line", lineNumber);
+    }
+
+    public static void undefinedSymbol(int lineNumber, String symbol) {
+        reportError("Undefined symbol",
+                "Invalid character/symbol: " + symbol, lineNumber);
+    }
+}
