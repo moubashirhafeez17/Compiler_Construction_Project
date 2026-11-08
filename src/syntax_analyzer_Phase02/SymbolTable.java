@@ -48,7 +48,7 @@ public class SymbolTable {
 
     public List<Entry> getEntries() { return entries; }
 
-    /** Pretty-prints the table to the given stream. */
+    // Pretty-prints the table to the given stream.
     public void print(PrintStream out) {
         int[] w = {HEADERS[0].length(), HEADERS[1].length(), HEADERS[2].length(), HEADERS[3].length()};
         for (Entry e : entries) {
@@ -67,7 +67,7 @@ public class SymbolTable {
         }
     }
 
-    /** Writes the table as CSV (same style as the Phase 1 output). */
+    // Writes the table as CSV (same style as the Phase 1 output).
     public void writeCsv(String path) throws IOException {
         try (BufferedWriter bw = new BufferedWriter(new FileWriter(path))) {
             bw.write("Lexeme,Type,Scope,Array size\n");
